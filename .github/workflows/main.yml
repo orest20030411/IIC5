@@ -2,18 +2,17 @@ name: My GitHub Actions Pipeline
 
 on:
   push:
-    branches:
-    - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  my-testing:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Hello Message
-      run: echo "Hello world from Testing job"
-      
-  my_deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Print Hello Message
-      run: echo "Hello world from Deploy job"
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build code
+      run: |
+        npm install
+        npm run build
