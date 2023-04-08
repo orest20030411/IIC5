@@ -3,7 +3,7 @@ name: My GitHub Actions Pipeline
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   my-testing:
