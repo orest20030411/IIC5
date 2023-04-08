@@ -1,5 +1,4 @@
 name: MyGitHubActions Pipeline
-
 on:
   push:
     branches: [main]
