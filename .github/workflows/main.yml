@@ -1,4 +1,4 @@
-name:  MyGitHubActions Pipeline
+name: MyGitHubActions Pipeline
 
 on:
   push:
@@ -13,4 +13,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Build code
-      run: python setup.py build
+      run: <BUILD>
