@@ -14,5 +14,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Build code
       run: |
-        npm install
-        npm run build
+         mvn package
