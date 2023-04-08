@@ -1,4 +1,4 @@
-name: MyGitHubActions Pipeline
+name: MyGitHubActionsPipeline
 on:
   push:
     branches: [main]
